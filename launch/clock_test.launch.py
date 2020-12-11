@@ -16,8 +16,8 @@ def generate_launch_description():
 
     clock_test = Node(
         package='clock_test',
-        executable='clock_test_node',
-        name='clock_test',
+        node_executable='clock_test_node',
+        node_name='clock_test',
         # node_namespace='simulation',
         output='screen',
         parameters=[
@@ -28,9 +28,9 @@ def generate_launch_description():
     )
     clock_test_w_namespace = Node(
         package='clock_test',
-        executable='clock_test_node',
-        name='clock_test',
-        namespace='test',
+        node_executable='clock_test_node',
+        node_name='clock_test',
+        node_namespace='test',
         output='screen',
         parameters=[
             {
