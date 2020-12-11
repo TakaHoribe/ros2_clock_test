@@ -1,0 +1,7 @@
+<launch>
+  <group>
+  <push-ros-namespace namespace="test"/>
+  <node pkg="clock_test" exec="clock_test_node" name="clock_test" output="screen">
+  </node>
+  </group>
+</launch>
