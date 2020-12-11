@@ -33,6 +33,8 @@ ClockTest::ClockTest(const rclcpp::NodeOptions &node_options)
 
   // clock_pub_ = this->create_publisher<rosgraph_msgs::msg::Clock>("/clock", 1);
 
+  const double rate = 2.0;
+
   // Timer
   auto timer_callback = std::bind(&ClockTest::onTimer, this);
   auto period = std::chrono::duration_cast<std::chrono::nanoseconds>(
