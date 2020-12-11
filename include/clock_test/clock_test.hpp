@@ -29,10 +29,8 @@ public:
 private:
   // Timer
   void onTimer();
-  rclcpp::Publisher<rosgraph_msgs::msg::Clock>::SharedPtr clock_pub_;
+  // rclcpp::Publisher<rosgraph_msgs::msg::Clock>::SharedPtr clock_pub_;
   rclcpp::TimerBase::SharedPtr timer_;
-
-
 };
 
 #endif
